@@ -14,8 +14,8 @@ Primary references:
 > The repository is public, but the **full dataset release** and **pretrained checkpoints**
 > are currently being reorganized. At the moment, this repository should be understood as
 > a documented research code release with validators, paper-to-code mapping, and runnable
-> entry points first. Public asset packaging and related dataset-generation code are being
-> cleaned up and will be updated again.
+> entry points first. Public asset packaging, related dataset-generation code, and ongoing
+> dataset sanity and volume preparation work are being cleaned up and will be updated again.
 >
 > Maintainer: **Jinwoo Lee (cinescope@kaist.ac.kr)**
 

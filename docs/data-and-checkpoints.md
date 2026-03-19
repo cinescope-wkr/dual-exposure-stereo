@@ -3,7 +3,7 @@
 ## Availability Status
 
 !!! important
-    The **full dataset release** and **pretrained checkpoints** are currently being reorganized. This repository therefore documents the expected structure and supported code paths clearly, but it does **not** yet serve as a full paper-scale asset drop. We intend to update the public assets again soon.
+    The **full dataset release** and **pretrained checkpoints** are currently being reorganized. This repository therefore documents the expected structure and supported code paths clearly, but it does **not** yet serve as a full paper-scale asset drop. Public asset packaging, related dataset-generation code, and dataset sanity and volume preparation work are all still in progress, and we intend to update the public release again soon.
 
 ## Synthetic CARLA Layout
 

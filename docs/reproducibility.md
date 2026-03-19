@@ -3,8 +3,8 @@
 !!! important
     The **full dataset release** and **pretrained checkpoints** are currently being reorganized.
     The current repository is best read as a documented research code release with validation
-    tools and paper-to-code mapping first, with public asset packaging and related dataset
-    generation code to be updated again.
+    tools and paper-to-code mapping first, with public asset packaging, related dataset
+    generation code, and dataset sanity and volume preparation work to be updated again.
 
 ## What Can Be Validated Today
 

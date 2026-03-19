@@ -36,8 +36,9 @@ by combining:
 > The repository is public, but the **full dataset release** and **pretrained checkpoints**
 > are currently being reorganized. This means the repository should presently be read as a
 > documented research code release with validators, paper-to-code mapping, and runnable
-> entry points, while the public asset packaging and related dataset-generation code are being
-> cleaned up and will be updated again soon.
+> entry points, while the public asset packaging, related dataset-generation code, and
+> ongoing dataset sanity and volume preparation work are being cleaned up and will be
+> updated again soon.
 >
 > Maintainer: **[Jinwoo Lee](cinescope-wkr.github.io) (cinescope@kaist.ac.kr)**
 

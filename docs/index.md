@@ -26,6 +26,7 @@ still being reorganized.
 The **full dataset release**, **pretrained checkpoints**, and related **dataset-generation code**
 are currently being reorganized. For now, this repository is best read as a documented research
 code release with validators, code-to-paper mapping, and reproducibility notes first.
+Dataset sanity and volume preparation work is also ongoing as the public release is cleaned up.
 
 Maintainer: **Jinwoo Lee (`cinescope@kaist.ac.kr`)**
 </div>

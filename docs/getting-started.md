@@ -70,7 +70,7 @@ Planned documentation URL:
 ## Current Availability Note
 
 !!! note
-    The repository is public now, but the **full dataset release** and **pretrained checkpoints** are still being reorganized. If you are looking for the complete paper-scale assets, please treat the current repository as a code-and-documentation release first, with asset updates expected later.
+    The repository is public now, but the **full dataset release** and **pretrained checkpoints** are still being reorganized. If you are looking for the complete paper-scale assets, please treat the current repository as a code-and-documentation release first. Asset packaging, related dataset-generation code, and dataset sanity and volume preparation work are still in progress.
 
 ## Primary References
 
