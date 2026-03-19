@@ -24,6 +24,10 @@
   </a>
 </p>
 
+<p align="center">
+  <em>Dual-exposure stereo aligns and fuses complementary bright and dark observations to preserve disparity cues and improve 3D imaging robustness under adverse lighting conditions.</em>
+</p>
+
 ---
 
 ## Overview
