@@ -1,0 +1,32 @@
+.hero {
+  padding: 1.2rem 0 1.8rem;
+}
+
+.hero__eyebrow {
+  color: var(--md-primary-fg-color);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.hero p {
+  max-width: 54rem;
+  font-size: 1.02rem;
+}
+
+.status-box {
+  border-left: 4px solid var(--md-primary-fg-color);
+  background: var(--md-code-bg-color);
+  padding: 1rem 1rem 0.2rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.mono-list code {
+  font-size: 0.9em;
+}

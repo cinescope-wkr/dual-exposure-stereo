@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated CVPR 2025 paper."
+title: "Dual Exposure Stereo for Extended Dynamic Range 3D Imaging"
+type: software
+authors:
+  - family-names: "Choi"
+    given-names: "Juhyung"
+  - family-names: "Kim"
+    given-names: "Jinnyeong"
+  - family-names: "Choi"
+    given-names: "Seokjun"
+  - family-names: "Lee"
+    given-names: "Jinwoo"
+  - family-names: "Brucker"
+    given-names: "Samuel"
+  - family-names: "Bijelic"
+    given-names: "Mario"
+  - family-names: "Heide"
+    given-names: "Felix"
+  - family-names: "Baek"
+    given-names: "Seung-Hwan"
+preferred-citation:
+  type: conference-paper
+  title: "Dual Exposure Stereo for Extended Dynamic Range 3D Imaging"
+  authors:
+    - family-names: "Choi"
+      given-names: "Juhyung"
+    - family-names: "Kim"
+      given-names: "Jinnyeong"
+    - family-names: "Choi"
+      given-names: "Seokjun"
+    - family-names: "Lee"
+      given-names: "Jinwoo"
+    - family-names: "Brucker"
+      given-names: "Samuel"
+    - family-names: "Bijelic"
+      given-names: "Mario"
+    - family-names: "Heide"
+      given-names: "Felix"
+    - family-names: "Baek"
+      given-names: "Seung-Hwan"
+  year: 2025
+  booktitle: "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)"
+  start: 6283
+  end: 6290
