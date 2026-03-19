@@ -18,6 +18,12 @@
   <a href="#citation">Citation</a>
 </p>
 
+<p align="center">
+  <a href="paper/teaser.pdf">
+    <img src="paper/teaser.png" alt="Dual Exposure Stereo teaser" width="92%" />
+  </a>
+</p>
+
 ---
 
 ## Overview
