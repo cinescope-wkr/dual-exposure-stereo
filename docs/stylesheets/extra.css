@@ -40,6 +40,23 @@
   max-width: 48rem;
 }
 
+.md-typeset .des-hero-lead a {
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(245, 251, 255, 0.45);
+}
+
+.md-typeset .des-hero-lead a:hover,
+.md-typeset .des-hero-lead a:focus {
+  text-decoration-color: rgba(245, 251, 255, 0.9);
+}
+
+.md-typeset .des-section-intro {
+  color: var(--md-default-fg-color--light);
+  font-size: 1.05rem;
+  max-width: 44rem;
+}
+
 .md-typeset .grid.cards > ul > li,
 .md-typeset .grid.cards > ol > li {
   border: 1px solid rgba(15, 23, 42, 0.08);

@@ -32,8 +32,10 @@ Maintainer: **Jinwoo Lee (`cinescope@kaist.ac.kr`)**
 
 ## What You Will Find Here
 
+<div class="des-section-intro" markdown="1">
 This documentation is designed to be the fast path through the repository: paper context,
 method structure, equation-to-code mapping, reproducibility status, and the expected data/checkpoint layout.
+</div>
 
 <div class="grid cards" markdown="1">
 
@@ -127,6 +129,8 @@ This allows the system to preserve more useful depth cues in scenes where a sing
 
 ## Audience
 
+<div class="des-section-intro" markdown="1">
 This repository is intended for researchers and developers working on stereo vision,
 computational imaging, HDR capture, robotic perception, and related areas that need a
 clear link between a published method and its codebase.
+</div>

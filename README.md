@@ -1,4 +1,4 @@
-<h1 align="center">Dual Exposure Stereo for Extended Dynamic Range 3D Imaging</h1>
+<h1 align="center">Dual Exposure Stereo for Extended Dynamic Range 3D Imaging (CVPR 2025)</h1>
 
 
 <p align="center">
@@ -45,47 +45,15 @@ by combining:
 
 ## Documentation
 
-This repository includes a dedicated MkDocs documentation scaffold in `docs/`
-with `mkdocs.yml` and `requirements-docs.txt`.
-
-Its purpose is simple:
-
-- connect the repository clearly to the paper and project page
-- explain the method and paper-to-code mapping
-- document reproducibility status, data layout, and checkpoint status
-
-Documentation site:
+Paper-to-code documentation is available at:
 
 - <https://cinescope-wkr.github.io/dual-exposure-stereo/>
 
-To preview the docs locally:
+Local preview:
 
 ```bash
-pip install -r requirements-docs.txt
-mkdocs serve
-```
-
-or:
-
-```bash
-make docs-install
 make docs-serve
 ```
-
-To build the static site:
-
-```bash
-mkdocs build
-```
-
-or:
-
-```bash
-make docs-build
-```
-
-GitHub Pages deployment is also prepared through `.github/workflows/docs.yml`.
-Once GitHub Pages is enabled for the repository, pushes to `main` can build and publish the MkDocs site automatically.
 
 ---
 
