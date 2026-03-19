@@ -10,7 +10,7 @@ Primary references:
 - [Project page](https://light.princeton.edu/publication/dual-exposure-stereo/)
 - [CVPR 2025 OpenAccess paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf)
 
-> [!IMPORTANT]
+> [!NOTE]
 > The repository is public, but the **full dataset release** and **pretrained checkpoints**
 > are currently being reorganized. At the moment, this repository should be understood as
 > a documented research code release with validators, paper-to-code mapping, and runnable
