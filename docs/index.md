@@ -3,20 +3,35 @@
 
 # Dual Exposure Stereo for Extended Dynamic Range 3D Imaging
 
-Research code and documentation for dual-exposure stereo: automatic dual exposure control, motion-aware cross-frame fusion, and extended-dynamic-range 3D imaging with stereo cameras.
+Documentation and research code for dual-exposure stereo, linking the CVPR 2025 paper to the implementation of ADEC, image formation, motion-aware fusion, and stereo disparity estimation.
 
-[Project Page](https://light.princeton.edu/publication/dual-exposure-stereo/){ .md-button .md-button--primary }
-[Paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf){ .md-button }
-[Documentation URL](https://cinescope-wkr.github.io/dual-exposure-stereo/){ .md-button }
-[Getting Started](getting-started.md){ .md-button }
+<div class="hero__actions" markdown>
+[Get Started](getting-started.md){ .md-button .md-button--primary }
+[Project Page](https://light.princeton.edu/publication/dual-exposure-stereo/){ .hero__link }
+[Paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf){ .hero__link }
+[Docs URL](https://cinescope-wkr.github.io/dual-exposure-stereo/){ .hero__link }
+</div>
 </div>
 
 <div class="status-box" markdown>
 **Repository status**
 
-The codebase is public, but the **full dataset release** and **pretrained checkpoints** are currently being reorganized. This repository is therefore positioned as a documented research code release with validation utilities and paper-to-code mapping first. We plan to update the public assets and related dataset-generation code again soon.
+This repository is currently best understood as a documented research code release with validation utilities and paper-to-code mapping first.
 
-Maintainer: **Jinwoo Lee (cinescope@kaist.ac.kr)**
+<div class="status-grid" markdown>
+<div class="status-chip">
+<div class="status-chip__label">Assets</div>
+<div class="status-chip__value">Dataset release and pretrained checkpoints are being reorganized.</div>
+</div>
+<div class="status-chip">
+<div class="status-chip__label">Updates</div>
+<div class="status-chip__value">Public assets and related dataset-generation code will be updated again.</div>
+</div>
+<div class="status-chip">
+<div class="status-chip__label">Maintainer</div>
+<div class="status-chip__value">Jinwoo Lee (`cinescope@kaist.ac.kr`)</div>
+</div>
+</div>
 </div>
 
 ## What This Site Covers
@@ -36,29 +51,29 @@ This documentation is designed to connect the repository to the paper and projec
 
 - **Paper**
 
-  The official CVPR 2025 paper is available through CVF OpenAccess.
+  Read the official CVPR 2025 paper through CVF OpenAccess.
 
   [OpenAccess PDF](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf)
 
 - **Project Page**
 
-  The project page includes overview text, videos, bibtex, and external paper/code/data links.
+  Browse the project overview, videos, bibtex, and external links.
 
   [Project Page](https://light.princeton.edu/publication/dual-exposure-stereo/)
 
 - **Documentation**
 
-  The MkDocs site for this repository is intended to be served at the GitHub Pages URL below.
+  Use the MkDocs site as the main paper-to-code reading path for the repository.
 
   [Documentation URL](https://cinescope-wkr.github.io/dual-exposure-stereo/)
 
 - **Local Paper Assets**
 
-  This repository also bundles a local paper PDF at `paper/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf` and a local teaser asset at `paper/teaser.pdf`.
+  The repository also bundles the local paper PDF and teaser asset under `paper/`.
 
 - **Validation**
 
-  The repository now includes a mock-scene logic validator and unit tests for key method behavior.
+  Run the lightweight validators and tests before full asset-based experiments.
 
   [Reproducibility](reproducibility.md)
 
