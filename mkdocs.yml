@@ -11,14 +11,19 @@ theme:
   palette:
     - scheme: default
       primary: blue grey
-      accent: teal
+      accent: cyan
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
     - navigation.tracking
+    - toc.integrate
     - content.code.copy
+    - content.action.edit
     - search.suggest
     - search.highlight
+edit_uri: edit/main/docs/
 markdown_extensions:
   - admonition
   - attr_list

@@ -1,81 +1,109 @@
-<div class="hero" markdown>
-<div class="hero__eyebrow">CVPR 2025</div>
+---
+hide:
+  - toc
+---
+
+<section class="des-hero" markdown="1">
+
+<div class="des-kicker">CVPR 2025</div>
 
 # Dual Exposure Stereo for Extended Dynamic Range 3D Imaging
 
-Documentation and research code for dual-exposure stereo, linking the CVPR 2025 paper to the implementation of ADEC, image formation, motion-aware fusion, and stereo disparity estimation.
+<p class="des-hero-lead">
+This site is the main paper-to-code guide for the repository: how the dual-exposure
+stereo method is organized, where the paper logic appears in the implementation,
+what is already reproducible from the checked-in code, and what public assets are
+still being reorganized.
+</p>
 
-<div class="hero__actions" markdown>
 [Get Started](getting-started.md){ .md-button .md-button--primary }
-[Project Page](https://light.princeton.edu/publication/dual-exposure-stereo/){ .hero__link }
-[Paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf){ .hero__link }
-[Docs URL](https://cinescope-wkr.github.io/dual-exposure-stereo/){ .hero__link }
-</div>
-</div>
+[Read the Method](method.md){ .md-button }
+[Check Reproducibility](reproducibility.md){ .md-button }
 
-<div class="status-box" markdown>
-**Repository status**
+</section>
 
-This repository is currently best understood as a documented research code release with validation utilities and paper-to-code mapping first.
+<div class="des-mini-note" markdown="1">
+The **full dataset release**, **pretrained checkpoints**, and related **dataset-generation code**
+are currently being reorganized. For now, this repository is best read as a documented research
+code release with validators, code-to-paper mapping, and reproducibility notes first.
 
-<div class="status-grid" markdown>
-<div class="status-chip">
-<div class="status-chip__label">Assets</div>
-<div class="status-chip__value">Dataset release and pretrained checkpoints are being reorganized.</div>
-</div>
-<div class="status-chip">
-<div class="status-chip__label">Updates</div>
-<div class="status-chip__value">Public assets and related dataset-generation code will be updated again.</div>
-</div>
-<div class="status-chip">
-<div class="status-chip__label">Maintainer</div>
-<div class="status-chip__value">Jinwoo Lee (`cinescope@kaist.ac.kr`)</div>
-</div>
-</div>
+Maintainer: **Jinwoo Lee (`cinescope@kaist.ac.kr`)**
 </div>
 
-## What This Site Covers
+## What You Will Find Here
 
-This documentation is designed to connect the repository to the paper and project page more clearly:
+This documentation is designed to be the fast path through the repository: paper context,
+method structure, equation-to-code mapping, reproducibility status, and the expected data/checkpoint layout.
 
-- the paper and project context
-- the method structure and code mapping
-- the detailed equation-to-code relationship for the core method
-- the current reproducibility status
-- the expected data and checkpoint layout
-- the lightweight validation tools already available in this repo
+<div class="grid cards" markdown="1">
 
-## Quick Links
+- [**Project page**](https://light.princeton.edu/publication/dual-exposure-stereo/)
 
-<div class="grid cards" markdown>
+  ---
 
-- **Paper**
+  Start from the public project overview, videos, bibtex, and external links.
+
+- [**Paper**](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf)
+
+  ---
 
   Read the official CVPR 2025 paper through CVF OpenAccess.
 
-  [OpenAccess PDF](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf)
+- [**Method overview**](method.md)
 
-- **Project Page**
+  ---
 
-  Browse the project overview, videos, bibtex, and external links.
+  See the strongest paper-to-code bridge, including equation and logic mapping.
 
-  [Project Page](https://light.princeton.edu/publication/dual-exposure-stereo/)
+- [**Reproducibility**](reproducibility.md)
 
-- **Documentation**
+  ---
 
-  Use the MkDocs site as the main paper-to-code reading path for the repository.
+  Check what can be validated today and what still depends on future asset updates.
 
-  [Documentation URL](https://cinescope-wkr.github.io/dual-exposure-stereo/)
+</div>
 
-- **Local Paper Assets**
+## Find What You Need
 
-  The repository also bundles the local paper PDF and teaser asset under `paper/`.
+If you are here for something specific, start from one of these pages:
 
-- **Validation**
+<div class="grid cards" markdown="1">
 
-  Run the lightweight validators and tests before full asset-based experiments.
+- [**I want to run something quickly**](getting-started.md)
 
-  [Reproducibility](reproducibility.md)
+  ---
+
+  Start with installation, validation commands, local docs preview, and first entry points.
+
+- [**I want the paper-to-code map**](method.md)
+
+  ---
+
+  Follow the implementation through ADEC, image formation, warping, fusion, and stereo matching.
+
+- [**I want the repository structure**](repository.md)
+
+  ---
+
+  See how `core/`, `tools/`, `test/`, `paper/`, and the MkDocs site fit together.
+
+- [**I want the data and checkpoint status**](data-and-checkpoints.md)
+
+  ---
+
+  See the expected layout, current packaging status, and what is still being reorganized.
+
+- [**I want the validation story**](reproducibility.md)
+
+  ---
+
+  Start from the shipped validators, unit tests, and current reproduction boundaries.
+
+- [**I want the citation information**](citation.md)
+
+  ---
+
+  Use the BibTeX entry, project page, and paper links from one place.
 
 </div>
 
@@ -83,20 +111,22 @@ This documentation is designed to connect the repository to the paper and projec
 
 The method combines three main ideas:
 
-1. `ADEC` adjusts a pair of stereo exposures instead of relying on a single-exposure controller.
+1. `ADEC` adapts a pair of stereo exposures instead of relying on a single-exposure controller.
 2. Alternating frames capture complementary bright and dark scene regions under different exposures.
 3. Motion-aware dual-exposure fusion aligns and combines information across frames before stereo disparity estimation.
 
-This allows the system to preserve more useful information for depth estimation in scenes where a single exposure would either clip highlights or bury shadows.
+This allows the system to preserve more useful depth cues in scenes where a single exposure would either clip highlights or bury shadows.
 
-## Why the Repository Is Structured This Way
+## Recommended Reading Path
 
-The paper evaluates both synthetic CARLA data and real stereo-plus-LiDAR capture. The repository therefore separates:
+1. Start with [Getting Started](getting-started.md) for installation, docs preview, and validators.
+2. Move to [Paper and Project](paper.md) for the public paper context.
+3. Read [Method Overview](method.md) for the equation-to-code mapping.
+4. Continue with [Repository Guide](repository.md) and [Data and Checkpoints](data-and-checkpoints.md).
+5. Finish with [Reproducibility](reproducibility.md) if you are trying to reproduce or audit the current public release.
 
-- exposure control logic in `core/adec.py`
-- image formation and simulation utilities in `core/utils/simulate.py`
-- dual-exposure stereo fusion in `core/disp_recon_model_dual.py`
-- end-to-end orchestration in `core/combine_model_dual.py`
-- dataset loading for synthetic and real settings
+## Audience
 
-For a guided walkthrough, continue to [Method Overview](method.md) and [Repository Guide](repository.md).
+This repository is intended for researchers and developers working on stereo vision,
+computational imaging, HDR capture, robotic perception, and related areas that need a
+clear link between a published method and its codebase.
