@@ -7,6 +7,7 @@ Research code and documentation for dual-exposure stereo: automatic dual exposur
 
 [Project Page](https://light.princeton.edu/publication/dual-exposure-stereo/){ .md-button .md-button--primary }
 [Paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf){ .md-button }
+[Documentation URL](https://cinescope-wkr.github.io/dual-exposure-stereo/){ .md-button }
 [Getting Started](getting-started.md){ .md-button }
 </div>
 
@@ -44,6 +45,12 @@ This documentation is designed to connect the repository to the paper and projec
   The project page includes overview text, videos, bibtex, and external paper/code/data links.
 
   [Project Page](https://light.princeton.edu/publication/dual-exposure-stereo/)
+
+- **Documentation**
+
+  The MkDocs site for this repository is intended to be served at the GitHub Pages URL below.
+
+  [Documentation URL](https://cinescope-wkr.github.io/dual-exposure-stereo/)
 
 - **Local Paper Assets**
 

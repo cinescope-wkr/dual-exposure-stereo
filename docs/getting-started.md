@@ -42,11 +42,30 @@ To preview the MkDocs site:
 mkdocs serve
 ```
 
+or:
+
+```bash
+make docs-serve
+```
+
 To build the static site:
 
 ```bash
 mkdocs build
 ```
+
+or:
+
+```bash
+make docs-build
+```
+
+The repository also includes a GitHub Pages workflow at `.github/workflows/docs.yml`
+so the same MkDocs site can be deployed automatically from `main`.
+
+Planned documentation URL:
+
+- <https://cinescope-wkr.github.io/dual-exposure-stereo/>
 
 ## Current Availability Note
 

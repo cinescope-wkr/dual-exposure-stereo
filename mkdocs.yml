@@ -1,6 +1,9 @@
 site_name: Dual Exposure Stereo
 site_description: Documentation for the CVPR 2025 paper "Dual Exposure Stereo for Extended Dynamic Range 3D Imaging"
 site_author: ADEC Contributors
+site_url: https://cinescope-wkr.github.io/dual-exposure-stereo/
+repo_url: https://github.com/cinescope-wkr/dual-exposure-stereo
+repo_name: cinescope-wkr/dual-exposure-stereo
 docs_dir: docs
 theme:
   name: material

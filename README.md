@@ -4,7 +4,7 @@
 <p align="center">
   <a href="https://light.princeton.edu/publication/dual-exposure-stereo/"><strong>Project Page</strong></a> •
   <a href="https://openaccess.thecvf.com/content/CVPR2025/papers/Choi_Dual_Exposure_Stereo_for_Extended_Dynamic_Range_3D_Imaging_CVPR_2025_paper.pdf"><strong>Paper</strong></a> •
-  <a href="#documentation"><strong>Documentation</strong></a>
+  <a href="https://cinescope-wkr.github.io/dual-exposure-stereo/"><strong>Documentation</strong></a>
 </p>
 
 <p align="center">
@@ -54,6 +54,10 @@ Its purpose is simple:
 - explain the method and paper-to-code mapping
 - document reproducibility status, data layout, and checkpoint status
 
+Documentation site:
+
+- <https://cinescope-wkr.github.io/dual-exposure-stereo/>
+
 To preview the docs locally:
 
 ```bash
@@ -61,11 +65,27 @@ pip install -r requirements-docs.txt
 mkdocs serve
 ```
 
+or:
+
+```bash
+make docs-install
+make docs-serve
+```
+
 To build the static site:
 
 ```bash
 mkdocs build
 ```
+
+or:
+
+```bash
+make docs-build
+```
+
+GitHub Pages deployment is also prepared through `.github/workflows/docs.yml`.
+Once GitHub Pages is enabled for the repository, pushes to `main` can build and publish the MkDocs site automatically.
 
 ---
 
